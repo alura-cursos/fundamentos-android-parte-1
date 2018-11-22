@@ -9,38 +9,43 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import br.com.alura.agenda.R;
 import br.com.alura.agenda.dao.AlunoDAO;
 
 public class ListaAlunosActivity extends AppCompatActivity {
 
+    public static final String TITULO_APPBAR = "Lista de alunos";
+    private final AlunoDAO dao = new AlunoDAO();
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_alunos);
+        setTitle(TITULO_APPBAR);
+        configuraFabNovoAluno();
+    }
 
-        setTitle("Lista de alunos");
-
+    private void configuraFabNovoAluno() {
         FloatingActionButton botaoNovoAluno = findViewById(R.id.activity_lista_alunos_fab_novo_aluno);
         botaoNovoAluno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ListaAlunosActivity.this,
-                        FormularioAlunoActivity.class));
+                abreFormularioAlunoActivity();
             }
         });
+    }
+
+    private void abreFormularioAlunoActivity() {
+        startActivity(new Intent(this, FormularioAlunoActivity.class));
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        configuraLista();
+    }
 
-        AlunoDAO dao = new AlunoDAO();
-
+    private void configuraLista() {
         ListView listaDeAlunos = findViewById(R.id.activity_lista_alunos_listview);
         listaDeAlunos.setAdapter(new ArrayAdapter<>(
                 this,
