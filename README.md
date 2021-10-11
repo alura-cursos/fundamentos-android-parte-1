@@ -1,3 +1,5 @@
+![android-java-fundamentos](https://user-images.githubusercontent.com/8989346/136828626-bb3eb043-49b1-473e-8352-eb18d9f8df34.png)
+
 # Agenda
 
 Projeto Android que simula uma agenda de contatos de alunos e alunas
