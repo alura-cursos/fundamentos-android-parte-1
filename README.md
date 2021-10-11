@@ -21,7 +21,7 @@ O App foi desenvolvido no Android Studio com a API 28 e foi atualizado para a AP
     - `FloatingActionButton`: botão flutuante para acessar a tela de formulário
     - `EditText`: campo para receber entrada do usuário
     - `Button`: botão para cadastrar novos contatos
-`DAO`: padrão de projeto para armazenar e buscar dados
+- `DAO`: padrão de projeto para armazenar e buscar dados
 
 ## 📁 Acesso ao projeto
 
