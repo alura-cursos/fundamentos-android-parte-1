@@ -25,7 +25,7 @@ O App foi desenvolvido no Android Studio com a API 28 e foi atualizado para a AP
 
 ## 📁 Acesso ao projeto
 
-Você pode acessar o [código fonte](https://github.com/alura-cursos/fundamentos-android-parte-1/tree/aula-5) do projeto ou [baixar via zip](https://github.com/alura-cursos/fundamentos-android-parte-1/archive/refs/heads/aula-5.zip) o projeto final.
+Você pode acessar o [código fonte](https://github.com/alura-cursos/fundamentos-android-parte-1/tree/aula-5) ou [baixar via zip](https://github.com/alura-cursos/fundamentos-android-parte-1/archive/refs/heads/aula-5.zip) o projeto final.
 
 ## 🛠️ Abrir e rodar o projeto
 
